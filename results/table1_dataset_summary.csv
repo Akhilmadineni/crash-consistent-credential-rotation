@@ -1,0 +1,9 @@
+Item,Value
+Rotation runs,"13,000"
+Inconsistent runs,"4,276 (32.9%)"
+Runs with injected crash,"8,493 (65.3%)"
+Missing: cache TTL / repl. lag / tx rate,2.7% / 1.5% / 1.1%
+Median dependent clients (IQR),21 (11-41)
+"Median replication lag, s",1.68
+Total failed transactions,"38,309,575"
+Share of failed tx in inconsistent runs,99.3%

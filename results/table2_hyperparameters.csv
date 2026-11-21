@@ -1,0 +1,11 @@
+Setting,Value
+GRU-CR,"embed 32, H=48, head 32, dropout 0.1, 17,703 params"
+Optimiser,"Adam, lr 3e-3, weight decay 1e-4, batch 256"
+Epochs / patience,max 40 / 8 on validation PR-AUC
+Auxiliary weight lambda,0.3
+Logistic regression,"L2, C=1, lbfgs, max_iter 3000"
+MLP,"(64, 32), alpha=1e-3, lr 1e-3, early stopping (15%, 10 iter)"
+Fixed-order rules,integer checklist score; cut-off tuned on inner validation
+Protocol,"stratified 5-fold CV, inner 15% validation"
+Seeds,2026 + fold index
+Software,"PyTorch (CPU, 1 thread), scikit-learn"
